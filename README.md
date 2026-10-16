@@ -40,7 +40,7 @@ University project (M2 BIDABI, 2026).
 | death | deaths (0.69), disappearance (0.63), demise (0.60) | screen | glass (0.78), film (0.73), screens (0.72) |
 | man | woman (0.68), person (0.59), fireman (0.57) | good | decent (0.84), great (0.78), fantastic (0.71) |
 
-Full lists and comments: [the report](Report/Word2Vec_report.pdf) (sections 8 and 9) and [`Results/reviews_results_corrected.txt`](Results/reviews_results_corrected.txt).
+Full lists: [`Results/movie_results.txt`](Results/movie_results.txt) and [`Results/reviews_results_corrected.txt`](Results/reviews_results_corrected.txt). Comments: [the report](Report/Word2Vec_report.pdf), sections 8 and 9.
 
 ### Analogy test
 

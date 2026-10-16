@@ -1,0 +1,56 @@
+WORD2VEC RESULTS - MOVIE SUMMARIES
+Source: values reported in Report/Word2Vec_report.pdf (Tables 2, 3, 6 and 7).
+These come from the training run used for the report. Scores are rounded to 2 decimals.
+Re-running main.py gives slightly different values (multi-threaded training).
+
+Gensim version: 4.4.0
+Original rows: 45466
+Rows after preprocessing: 44493
+Total tokens: 2362992
+Vocabulary size: 22573
+Vector dimensions: 100
+Training time: 31.63 seconds
+Architecture: Skip-gram
+Window: 5
+Minimum word count: 5
+Epochs: 10
+
+Words most similar to 'love':
+  madly: 0.71
+  romance: 0.60
+  fantasize: 0.60
+  persists: 0.58
+  friendship: 0.58
+Words most similar to 'war':
+  ii: 0.83
+  civil: 0.69
+  wwii: 0.67
+  ww: 0.67
+  vietnam: 0.67
+Words most similar to 'family':
+  families: 0.60
+  mikkel: 0.59
+  parents: 0.58
+  community: 0.58
+  drifting: 0.56
+Words most similar to 'death':
+  deaths: 0.69
+  disappearance: 0.63
+  demise: 0.60
+  grieving: 0.60
+  carnage: 0.59
+Words most similar to 'man':
+  woman: 0.68
+  person: 0.59
+  fireman: 0.57
+  men: 0.57
+  pediatrician: 0.57
+
+Cosine similarity (love, family): 0.2201
+
+Analogy test (Google questions-words, 19544 questions):
+  Questions tested: 8703
+  Correct answers: 824
+  Overall accuracy: 9.5%
+  Family: 51.0%
+  Comparatives: 6.6%
