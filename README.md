@@ -10,10 +10,10 @@ University project (M2 BIDABI, 2026).
 
 ## Key findings
 
-- **Each model learns what its corpus talks about.** The movie model groups words by theme (*war* → *civil*, *wwii*, *regiment*); the review model groups product vocabulary (*battery* → *capacity*, *mah*, *batteries*).
-- **Similar does not mean synonym.** Words used in the same contexts end up close (*man* / *woman*: 0.70; *good* / *decent*: 0.84).
+- **Each model learns what its corpus talks about.** The movie model groups words by theme (*war* → *civil*, *wwii*, *vietnam*); the review model groups product vocabulary (*battery* → *capacity*, *mah*, *batteries*).
+- **Similar does not mean synonym.** Words used in the same contexts end up close (*man* / *woman*: 0.68; *good* / *decent*: 0.84).
 - **Data cleaning shows up directly in the results.** Typos and abbreviations left in the reviews become nearest neighbours (*battery* → *batter* 0.88, *batt* 0.75).
-- **A higher analogy score does not mean a better model.** The review model scores 29.6% vs. 9.7%, but mostly thanks to comparatives (*good → better*), which are everywhere in reviews. The movie model does better on family relations (49.2% vs. 40.9%).
+- **A higher analogy score does not mean a better model.** The review model scores 29.6% vs. 9.5%, but mostly thanks to comparatives (*good → better*), which are everywhere in reviews. The movie model does better on family relations (51.0% vs. 40.9%).
 
 ## Method
 
@@ -36,21 +36,21 @@ University project (M2 BIDABI, 2026).
 
 | Movies | Top 3 neighbours | Reviews | Top 3 neighbours |
 | --- | --- | --- | --- |
-| war | ii (0.85), civil (0.71), ww (0.69) | battery | batter (0.88), batt (0.75), capacity (0.75) |
-| death | deaths (0.67), disappearance (0.63), demise (0.63) | screen | glass (0.78), film (0.73), screens (0.72) |
-| man | woman (0.70), fireman (0.59), pediatrician (0.58) | good | decent (0.84), great (0.78), fantastic (0.71) |
+| war | ii (0.83), civil (0.69), wwii (0.67) | battery | batter (0.88), batt (0.75), capacity (0.75) |
+| death | deaths (0.69), disappearance (0.63), demise (0.60) | screen | glass (0.78), film (0.73), screens (0.72) |
+| man | woman (0.68), person (0.59), fireman (0.57) | good | decent (0.84), great (0.78), fantastic (0.71) |
 
-Full lists: [`Results/movie_results.txt`](Results/movie_results.txt) and [`Results/reviews_results_corrected.txt`](Results/reviews_results_corrected.txt).
+Full lists and comments: [the report](Report/Word2Vec_report.pdf) (sections 8 and 9) and [`Results/reviews_results_corrected.txt`](Results/reviews_results_corrected.txt).
 
 ### Analogy test
 
 | | Movies | Reviews |
 | --- | ---: | ---: |
 | Questions tested (out of 19,544) | 8,703 | 7,392 |
-| Correct answers | 840 | 2,187 |
-| **Overall accuracy** | **9.7%** | **29.6%** |
-| Family (*boy : girl :: brother : ?*) | 49.2% | 40.9% |
-| Comparatives (*good : better :: bad : ?*) | 7.3% | 67.9% |
+| Correct answers | 824 | 2,187 |
+| **Overall accuracy** | **9.5%** | **29.6%** |
+| Family (*boy : girl :: brother : ?*) | 51.0% | 40.9% |
+| Comparatives (*good : better :: bad : ?*) | 6.6% | 67.9% |
 
 A question is skipped when one of its words is missing from the vocabulary, so the two models are not tested on the same questions.
 
@@ -94,7 +94,7 @@ python Test_analogies.py
 python generer_figures.py
 ```
 
-Training takes about 20 s for the movies and 3 min for the reviews on a laptop. Because training runs on several threads, results can vary slightly from one run to another.
+Training takes about 30 s for the movies and 3 min for the reviews on a laptop. Because training runs on several threads, results can vary slightly from one run to another. The figures in this README are those of the report.
 
 ## Limitations
 
