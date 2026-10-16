@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+Data/
+Results/*.model
+Results/*.npy
+
+.vscode/
+typings/
+desktop.ini
+.DS_Store
+Thumbs.db

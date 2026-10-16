@@ -1,0 +1,45 @@
+WORD2VEC RESULTS - MOVIE SUMMARIES
+Gensim version: 4.4.0
+Original rows: 45466
+Rows after preprocessing: 44493
+Total tokens: 2362992
+Vocabulary size: 22573
+Vector dimensions: 100
+Training time: 22.15 seconds
+Architecture: Skip-gram
+Window: 5
+Minimum word count: 5
+Epochs: 10
+
+Words most similar to 'love':
+  madly: 0.6927
+  romance: 0.6283
+  sneha: 0.5922
+  suman: 0.5906
+  gerardo: 0.5812
+Words most similar to 'war':
+  ii: 0.8483
+  civil: 0.7088
+  ww: 0.6853
+  regiment: 0.6598
+  wwii: 0.6576
+Words most similar to 'family':
+  families: 0.5956
+  ancestral: 0.5777
+  community: 0.5744
+  mikkel: 0.5675
+  sakina: 0.5667
+Words most similar to 'death':
+  deaths: 0.6733
+  disappearance: 0.6314
+  demise: 0.6283
+  crucifixion: 0.5947
+  wrongful: 0.5889
+Words most similar to 'man':
+  woman: 0.6969
+  fireman: 0.5882
+  pediatrician: 0.5778
+  varun: 0.5751
+  person: 0.5587
+
+Cosine similarity (love, family): 0.2483

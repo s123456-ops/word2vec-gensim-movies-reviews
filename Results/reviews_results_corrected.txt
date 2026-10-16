@@ -1,0 +1,47 @@
+WORD2VEC RESULTS - CORRECTED AMAZON REVIEWS
+Gensim version: 4.4.0
+Reviews retained: 194329
+Empty or unusable reviews: 110
+Total tokens: 17326224
+Vocabulary size: 20853
+Vector dimensions: 100
+Training time: 164.04 seconds
+Architecture: Skip-gram
+Window: 5
+Minimum word count: 5
+Epochs: 10
+Known spelling variants normalized: yes
+Known joined words split: yes
+
+Words most similar to 'phone':
+  cellphone: 0.6860
+  iphone: 0.6405
+  device: 0.6396
+  lgg: 0.6136
+  smartphone: 0.6132
+Words most similar to 'battery':
+  batter: 0.8841
+  batt: 0.7527
+  capacity: 0.7473
+  mah: 0.7361
+  batteries: 0.7167
+Words most similar to 'screen':
+  glass: 0.7829
+  film: 0.7284
+  screens: 0.7236
+  protector: 0.7198
+  screensaver: 0.6776
+Words most similar to 'quality':
+  build: 0.7276
+  workmanship: 0.7068
+  craftsmanship: 0.6821
+  clarity: 0.6530
+  qualitycons: 0.6493
+Words most similar to 'good':
+  decent: 0.8373
+  great: 0.7775
+  fantastic: 0.7085
+  excellent: 0.7048
+  nice: 0.7026
+
+Cosine similarity (battery, charging): 0.5218
