@@ -103,11 +103,6 @@ Training takes about 20 s for the movies and 3 min for the reviews on a laptop. 
 - Removing digits loses information (*World War II* → *ii*, *LG G2* → *lgg*).
 - Rare words, such as first names seen only a few times, get unreliable vectors.
 
-## References
-
-- Mikolov et al. (2013), [*Efficient Estimation of Word Representations in Vector Space*](https://arxiv.org/abs/1301.3781)
-- [Gensim Word2Vec documentation](https://radimrehurek.com/gensim/models/word2vec.html)
-
 ## Author
 
 Salma Alaoui Mrani
